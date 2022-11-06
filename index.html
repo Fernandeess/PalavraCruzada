@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras Cruzadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Palavras Cruzadas</h1>
+        <button onclick="check()">Checar</button>
+    </header>
+    <main>
+        <div class="descricao">
+            <h2>Descrição</h2>
+            <p id="dica1">
+                1 - O que é usado para transferir dados entre dispositivos identificados pelo endereço de
+                hardware da memória física?
+                Adress bus
+            </p>
+            <p id="dica2">
+                2 - Qual é o principal item que compoe o hardware de um computador?
+                CPU
+            </p>
+
+            <p id="dica3">
+                3 - O que recebe 2 operandos como entrada e uma entrada auxiliar?
+                ULA</p>
+            <p id="dica4">
+                4 - Quem guarda temporariamente toda a informação que o processador precisa?
+                RAM
+            </p>
+            <p id="dica5">
+                5 - Qual memoria existe apenas para leitura de dados?
+                ROM</p>
+            <p id="dica6">
+                6 - Qual memoria pode ser apagada com luz ultravioleta?
+                Eprom</p>
+            <p id="dica7">
+                7 - Qual memoria permite que diversos endereços sejam apagados ou escritos numa só operação?
+                Flash</p>
+            <p id="dica8">
+                8 - Qual memoria tem função de armazenar grande quantidade de dados?
+                Memória de massa</p>
+            <p id="dica9">
+                9 - Qual método que permite que um dispositivo de entrada e saída envie ou receba dados diretamente
+                da
+                memória principal?
+                DMA</p>
+            <p id="dica10">
+                10 - Qual componente que quando não está sendo utilizado, está no chamado modo de espera?
+                Chip select
+            </p>
+            <p id="dica11">
+                11 - O que é consistindo em um conector ou conjunto de fios, que fornece transporte de dados?
+                Data Bus</p>
+            <p id="dica12">
+                12 - qual processador possui 4 núcleos?
+                I5</p>
+            <p id="dica13">
+                13 - qual processador possui 8 núcleos? I7</p>
+            <p id="dica14">
+                14 - Qual nome dado quando um processador tem 2 núcleos? Dual Core</p>
+            <p id="dica15">
+                15 - qual nome dado quando um processador tem 4 núcleos? QuadCore</p>
+            <p id="dica16">
+                16 - Qual parte do código pode ser executada independentemente do programa principal? Thread</p>
+            <p id="dica17">
+                17 - Qual memoria atua como uma memória temporária para que o chipset recupere rapidamente os
+                dados? Memoria cache</p>
+            <p id="dica18">
+                18 - quais são circuitos digitais capazes de armazenar e deslocar informações? Registradores
+            </p>
+        </div>
+
+        <div class="palavrasCruzada">
+            <h3>Utilize letras maiúscula</h3>
+            <div class="container">
+                <div id="x1" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7" placeholder="4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11" placeholder="10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x2" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3" placeholder="16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5" placeholder="5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x3" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1" placeholder="18">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x4" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1" placeholder="6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8" placeholder="17">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x5" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14" placeholder="7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x6" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1" placeholder="13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11" placeholder="12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x7" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5" placeholder="11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x8" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x9" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3" placeholder="3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x10" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x11" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1" placeholder="14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x12" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x13" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3" placeholder="2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9" placeholder="15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14" placeholder="10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x14" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x15" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+                <div id="x16" class="line">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY1">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY2">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY3">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY4">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY5">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY6">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY7">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY8">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY9" placeholder="9">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY10">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY11">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY12">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY13">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY14">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY15">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY16">
+                    <input type="text" class="celulas" maxlength="1" id="eixoY17">
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="script.js"></script>
