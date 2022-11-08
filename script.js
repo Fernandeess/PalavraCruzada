@@ -67,20 +67,20 @@ x11L[4].value = '-'
 function check() {
     function palavra1() {
         if (
-            x8L[4].value == "A" &&
-            x8L[5].value == "D" &&
-            x8L[6].value == "R" &&
-            x8L[7].value == "E" &&
-            x8L[8].value == "S" &&
-            x8L[9].value == "S" &&
-            x8L[10].value == "-" &&
-            x8L[11].value == "B" &&
-            x8L[12].value == "U" &&
-            x8L[13].value == "S"
+            x8L[4].value.toUpperCase() == "A" &&
+            x8L[5].value.toUpperCase() == "D" &&
+            x8L[6].value.toUpperCase() == "R" &&
+            x8L[7].value.toUpperCase() == "E" &&
+            x8L[8].value.toUpperCase() == "S" &&
+            x8L[9].value.toUpperCase() == "S" &&
+            x8L[10].value.toUpperCase() == "-" &&
+            x8L[11].value.toUpperCase() == "B" &&
+            x8L[12].value.toUpperCase() == "U" &&
+            x8L[13].value.toUpperCase() == "S"
 
         ) {
 
-            dica1.style = `  font-size: 5px;
+            dica1.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
             console.log("Adress-Bus");
@@ -90,25 +90,25 @@ function check() {
     }
     function palavra2() {
         if (
-            x3L[0].value == "R" &&
-            x4L[0].value == "E" &&
-            x5L[0].value == "G" &&
-            x6L[0].value == "I" &&
-            x7L[0].value == "S" &&
-            x8L[0].value == "T" &&
-            x9L[0].value == "R" &&
-            x10L[0].value == "A" &&
-            x11L[0].value == "D" &&
-            x12L[0].value == "O" &&
-            x13L[0].value == "R" &&
-            x14L[0].value == "E" &&
-            x15L[0].value == "S"
+            x3L[0].value.toUpperCase().ToUpper == "R" &&
+            x4L[0].value.toUpperCase() == "E" &&
+            x5L[0].value.toUpperCase() == "G" &&
+            x6L[0].value.toUpperCase() == "I" &&
+            x7L[0].value.toUpperCase() == "S" &&
+            x8L[0].value.toUpperCase() == "T" &&
+            x9L[0].value.toUpperCase() == "R" &&
+            x10L[0].value.toUpperCase() == "A" &&
+            x11L[0].value.toUpperCase() == "D" &&
+            x12L[0].value.toUpperCase() == "O" &&
+            x13L[0].value.toUpperCase() == "R" &&
+            x14L[0].value.toUpperCase() == "E" &&
+            x15L[0].value.toUpperCase() == "S"
 
         ) {
 
 
             console.log("Registradores");
-            dica18.style = `  font-size: 5px;
+            dica18.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -116,21 +116,21 @@ function check() {
         }
     } function palavra3() {
         if (
-            x1L[10].value == 'M' &&
-            x2L[10].value == 'E' &&
-            x3L[10].value == 'M' &&
-            x4L[10].value == 'O' &&
-            x5L[10].value == 'R' &&
-            x6L[10].value == 'I' &&
-            x7L[10].value == 'A' &&
-            x8L[10].value == '-' &&
-            x9L[10].value == 'D' &&
-            x11L[10].value == '-' &&
-            x12L[10].value == 'M' &&
-            x13L[10].value == 'A' &&
-            x14L[10].value == 'S' &&
-            x15L[10].value == 'S' &&
-            x16L[10].value == 'A'
+            x1L[10].value.toUpperCase() == 'M' &&
+            x2L[10].value.toUpperCase() == 'E' &&
+            x3L[10].value.toUpperCase() == 'M' &&
+            x4L[10].value.toUpperCase() == 'O' &&
+            x5L[10].value.toUpperCase() == 'R' &&
+            x6L[10].value.toUpperCase() == 'I' &&
+            x7L[10].value.toUpperCase() == 'A' &&
+            x8L[10].value.toUpperCase() == '-' &&
+            x9L[10].value.toUpperCase() == 'D' &&
+            x11L[10].value.toUpperCase() == '-' &&
+            x12L[10].value.toUpperCase() == 'M' &&
+            x13L[10].value.toUpperCase() == 'A' &&
+            x14L[10].value.toUpperCase() == 'S' &&
+            x15L[10].value.toUpperCase() == 'S' &&
+            x16L[10].value.toUpperCase() == 'A'
 
         ) {
 
@@ -141,16 +141,16 @@ function check() {
         }
     } function palavra4() {
         if (
-            x4L[0].value == 'E' &&
-            x4L[1].value == 'P' &&
-            x4L[2].value == 'R' &&
-            x4L[3].value == 'O' &&
-            x4L[4].value == 'M'
+            x4L[0].value.toUpperCase() == 'E' &&
+            x4L[1].value.toUpperCase() == 'P' &&
+            x4L[2].value.toUpperCase() == 'R' &&
+            x4L[3].value.toUpperCase() == 'O' &&
+            x4L[4].value.toUpperCase() == 'M'
 
         ) {
 
             console.log("EPROM");
-            dica6.style = `  font-size: 5px;
+            dica6.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -159,18 +159,18 @@ function check() {
     }
     function palavra5() {
         if (
-            x2L[2].value == 'T' &&
-            x2L[3].value == 'H' &&
-            x2L[4].value == 'R' &&
-            x2L[5].value == 'E' &&
-            x2L[6].value == 'A' &&
-            x2L[7].value == 'D' &&
-            x2L[8].value == 'S'
+            x2L[2].value.toUpperCase() == 'T' &&
+            x2L[3].value.toUpperCase() == 'H' &&
+            x2L[4].value.toUpperCase() == 'R' &&
+            x2L[5].value.toUpperCase() == 'E' &&
+            x2L[6].value.toUpperCase() == 'A' &&
+            x2L[7].value.toUpperCase() == 'D' &&
+            x2L[8].value.toUpperCase() == 'S'
 
         ) {
 
             console.log("THEREADS");
-            dica8.style = `  font-size: 5px;
+            dica8.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -178,15 +178,15 @@ function check() {
         }
     } function palavra6() {
         if (
-            x5L[13].value == 'F' &&
-            x6L[13].value == 'L' &&
-            x7L[13].value == 'A' &&
-            x8L[13].value == 'S' &&
-            x9L[13].value == 'H'
+            x5L[13].value.toUpperCase() == 'F' &&
+            x6L[13].value.toUpperCase() == 'L' &&
+            x7L[13].value.toUpperCase() == 'A' &&
+            x8L[13].value.toUpperCase() == 'S' &&
+            x9L[13].value.toUpperCase() == 'H'
         ) {
 
             console.log("FLASH");
-            dica7.style = `  font-size: 5px;
+            dica7.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -195,12 +195,12 @@ function check() {
     }
     function palavra7() {
         if (
-            x6L[0].value == 'I' &&
-            x6L[1].value == '7'
+            x6L[0].value.toUpperCase() == 'I' &&
+            x6L[1].value.toUpperCase() == '7'
         ) {
 
             console.log("I7");
-            dica13.style = `  font-size: 5px;
+            dica13.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -209,13 +209,13 @@ function check() {
     }
     function palavra8() {
         if (
-            x2L[4].value == 'R' &&
-            x3L[4].value == 'O' &&
-            x4L[4].value == 'M'
+            x2L[4].value.toUpperCase() == 'R' &&
+            x3L[4].value.toUpperCase() == 'O' &&
+            x4L[4].value.toUpperCase() == 'M'
         ) {
 
             console.log("ROM");
-            dica5.style = `  font-size: 5px;
+            dica5.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -224,13 +224,13 @@ function check() {
     }
     function palavra9() {
         if (
-            x1L[6].value == 'R' &&
-            x2L[6].value == 'A' &&
-            x3L[6].value == 'M'
+            x1L[6].value.toUpperCase() == 'R' &&
+            x2L[6].value.toUpperCase() == 'A' &&
+            x3L[6].value.toUpperCase() == 'M'
         ) {
 
             console.log("RAM");
-            dica4.style = `  font-size: 5px;
+            dica4.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -239,15 +239,15 @@ function check() {
     }
     function palavra10() {
         if (
-            x4L[7].value == 'C' &&
-            x5L[7].value == 'A' &&
-            x6L[7].value == 'C' &&
-            x7L[7].value == 'H' &&
-            x8L[7].value == 'E'
+            x4L[7].value.toUpperCase() == 'C' &&
+            x5L[7].value.toUpperCase() == 'A' &&
+            x6L[7].value.toUpperCase() == 'C' &&
+            x7L[7].value.toUpperCase() == 'H' &&
+            x8L[7].value.toUpperCase() == 'E'
         ) {
 
             console.log("CACHE");
-            dica17.style = `  font-size: 5px;
+            dica17.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -256,18 +256,18 @@ function check() {
     }
     function palavra11() {
         if (
-            x7L[4].value == 'D' &&
-            x8L[4].value == 'A' &&
-            x9L[4].value == 'T' &&
-            x10L[4].value == 'A' &&
-            x11L[4].value == '-' &&
-            x12L[4].value == 'B' &&
-            x13L[4].value == 'U' &&
-            x14L[4].value == 'S'
+            x7L[4].value.toUpperCase() == 'D' &&
+            x8L[4].value.toUpperCase() == 'A' &&
+            x9L[4].value.toUpperCase() == 'T' &&
+            x10L[4].value.toUpperCase() == 'A' &&
+            x11L[4].value.toUpperCase() == '-' &&
+            x12L[4].value.toUpperCase() == 'B' &&
+            x13L[4].value.toUpperCase() == 'U' &&
+            x14L[4].value.toUpperCase() == 'S'
         ) {
 
             console.log("DATA-BUS");
-            dica11.style = `  font-size: 5px;
+            dica11.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -276,14 +276,14 @@ function check() {
     }
     function palavra12() {
         if (
-            x13L[2].value == 'C' &&
-            x13L[3].value == 'P' &&
-            x13L[4].value == 'U'
+            x13L[2].value.toUpperCase().toUpperCase() == 'C' &&
+            x13L[3].value.toUpperCase() == 'P' &&
+            x13L[4].value.toUpperCase() == 'U'
 
         ) {
 
             console.log("CPU");
-            dica2.style = `  font-size: 5px;
+            dica2.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -292,20 +292,20 @@ function check() {
     }
     function palavra13() {
         if (
-            x11L[0].value == 'D' &&
-            x11L[1].value == 'U' &&
-            x11L[2].value == 'A' &&
-            x11L[3].value == 'L' &&
-            x11L[4].value == '-' &&
-            x11L[5].value == 'C' &&
-            x11L[6].value == 'O' &&
-            x11L[7].value == 'R' &&
-            x11L[8].value == 'E'
+            x11L[0].value.toUpperCase() == 'D' &&
+            x11L[1].value.toUpperCase() == 'U' &&
+            x11L[2].value.toUpperCase() == 'A' &&
+            x11L[3].value.toUpperCase() == 'L' &&
+            x11L[4].value.toUpperCase() == '-' &&
+            x11L[5].value.toUpperCase() == 'C' &&
+            x11L[6].value.toUpperCase() == 'O' &&
+            x11L[7].value.toUpperCase() == 'R' &&
+            x11L[8].value.toUpperCase() == 'E'
 
         ) {
 
             console.log("DUAL-CORE");
-            dica14.style = `  font-size: 5px;
+            dica14.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -314,13 +314,13 @@ function check() {
     }
     function palavra14() {
         if (
-            x9L[2].value == 'U' &&
-            x10L[2].value == 'L' &&
-            x11L[2].value == 'A'
+            x9L[2].value.toUpperCase() == 'U' &&
+            x10L[2].value.toUpperCase() == 'L' &&
+            x11L[2].value.toUpperCase() == 'A'
         ) {
 
             ("ULA");
-            dica3.style = `  font-size: 5px;
+            dica3.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -329,20 +329,20 @@ function check() {
     }
     function palavra15() {
         if (
-            x13L[8].value == 'Q' &&
-            x13L[9].value == 'U' &&
-            x13L[10].value == 'A' &&
-            x13L[11].value == 'D' &&
-            x13L[12].value == '-' &&
-            x13L[13].value == 'C' &&
-            x13L[14].value == 'O' &&
-            x13L[15].value == 'R' &&
-            x13L[16].value == 'E'
+            x13L[8].value.toUpperCase() == 'Q' &&
+            x13L[9].value.toUpperCase() == 'U' &&
+            x13L[10].value.toUpperCase() == 'A' &&
+            x13L[11].value.toUpperCase() == 'D' &&
+            x13L[12].value.toUpperCase() == '-' &&
+            x13L[13].value.toUpperCase() == 'C' &&
+            x13L[14].value.toUpperCase() == 'O' &&
+            x13L[15].value.toUpperCase() == 'R' &&
+            x13L[16].value.toUpperCase() == 'E'
 
         ) {
 
             console.log("QUAD-CORE");
-            dica15.style = `  font-size: 5px;
+            dica15.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -352,13 +352,13 @@ function check() {
     }
     function palavra16() {
         if (
-            x6L[10].value == 'I' &&
-            x6L[11].value == '5'
+            x6L[10].value.toUpperCase() == 'I' &&
+            x6L[11].value.toUpperCase() == '5'
 
         ) {
 
             console.log("I5");
-            dica12.style = `  font-size: 5px;
+            dica12.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -368,15 +368,15 @@ function check() {
     }
     function palavra17() {
         if (
-            x16L[8].value == 'D' &&
-            x16L[9].value == 'M' &&
-            x16L[10].value == 'A'
+            x16L[8].value.toUpperCase() == 'D' &&
+            x16L[9].value.toUpperCase() == 'M' &&
+            x16L[10].value.toUpperCase() == 'A'
 
 
         ) {
 
             console.log("DMA");
-            dica9.style = `  font-size: 5px;
+            dica9.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {
@@ -386,13 +386,13 @@ function check() {
     }
     function palavra18() {
         if (
-            x13L[13].value == 'C' &&
-            x14L[13].value == 'S'
+            x13L[13].value.toUpperCase() == 'C' &&
+            x14L[13].value.toUpperCase() == 'S'
 
         ) {
 
             console.log("CS");
-            dica10.style = `  font-size: 5px;
+            dica10.style = `  font-size: 20px;
     text-decoration: line-through;
     color: green;`
         } else {

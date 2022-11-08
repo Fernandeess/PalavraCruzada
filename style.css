@@ -39,7 +39,7 @@ main {
     flex-direction: column;
     width: 30%;
     height: fit-content;
-    min-height: 95vh;
+    min-height: 104vh;
     background-color: rgb(23, 23, 23);
     color: white;
     text-align: left;
